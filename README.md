@@ -2,7 +2,9 @@
 Live Link: https://sanjoy-tube.vercel.app/
 
 => Sanjoy-Tube is a modern and lightweight frontend clone of YouTube, built using React + Vite.
+
 => This project fetches real-time data using the YouTube Data API, including videos, channels, comments, recommendations, and more — giving users a smooth and dynamic YouTube-like experience.
+
 => I created this project to practice real-world API integration, improve my UI/UX skills, and get hands-on experience building production-ready frontend applications.
 
 ✨ What This Project Does:
