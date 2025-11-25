@@ -1,0 +1,249 @@
+.play-video{
+  flex-basis: 70%;
+}
+
+.play-video iframe{
+  width: 100%;
+  height: 37vw;
+}
+
+.play-video h3{
+  margin-top: 10px;
+  font-weight: 600;
+  font-size: 23px;
+}
+
+.play-video-info {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  margin: 15px 0 20px;
+  color: #444;
+  font-size: 14px;
+}
+
+.play-video-info p {
+  color: #666;
+  margin: 0;
+}
+
+.play-video-info div {
+  display: flex;
+  align-items: center;
+  gap: 16px;
+}
+
+.play-video-info span {
+  display: flex;
+  align-items: center;
+  gap: 6px;
+  cursor: pointer;
+  transition: color 0.3s ease, transform 0.2s ease;
+}
+
+.play-video-info span img {
+  width: 20px;
+  height: 20px;
+  opacity: 0.9;
+  transition: transform 0.2s ease, opacity 0.2s ease, filter 0.2s ease;
+}
+
+.play-video-info span:hover img {
+  transform: scale(1.2);
+  opacity: 1;
+  filter: brightness(1.3);
+}
+
+.play-video-info span:hover {
+  color: #ff3b3b; /* red accent for hover */
+  transform: translateY(-1px);
+}
+
+
+.play-video hr{
+  border: 0;
+  height: 1px;
+  background: #dcdbdb;
+  margin: 10px 0;
+}
+
+.publisher{
+  display: flex;
+  align-items: center;
+  margin-top: 20px;
+}
+
+.publisher div{
+  flex: 1;
+  line-height: 18px;
+}
+
+.publisher img {
+  width: 42px;
+  height: 42px;
+  border-radius: 50%;
+  margin-right: 15px;
+  object-fit: cover;
+  border: 2px solid #e0e0e0;
+  box-shadow: 0 0 6px rgba(0, 0, 0, 0.08);
+  transition: transform 0.25s ease, border-color 0.3s ease;
+}
+
+.publisher img:hover {
+  transform: scale(1.08);
+  border-color: #ff3b3b;
+}
+
+.publisher div p {
+  color: #0f0f0f;
+  font-weight: 600;
+  font-size: 17px;
+  margin: 0;
+  line-height: 1.2;
+  letter-spacing: 0.2px;
+  transition: transform 0.25s ease, text-shadow 0.25s ease;
+  transform-origin: left center;
+}
+
+.publisher div p:hover {
+  transform: perspective(300px) translateZ(8px);
+  text-shadow: 0 2px 6px rgba(0, 0, 0, 0.25);
+}
+
+.publisher div span{
+  font: 13px ;
+  color: #555252;
+}
+
+.publisher .button {
+  padding: 8px 30px;
+  border: none;
+  border-radius: 4px;
+  font-weight: bold;
+  letter-spacing: 5px;
+  text-transform: uppercase;
+  cursor: pointer;
+  color: #d13131;
+  transition: all 1000ms;
+  font-size: 15px;
+  position: relative;
+  overflow: hidden;
+  outline: 2px solid #cd1e18;
+}
+
+.button:hover {
+  color: #ffffff;
+  transform: scale(1.1);
+  outline: 2px solid #70bdca;
+  box-shadow: 4px 5px 17px -4px #268391;
+}
+
+button::before {
+  content: "";
+  position: absolute;
+  left: -50px;
+  top: 0;
+  width: 0;
+  height: 100%;
+  background-color: #c51f1f;
+  transform: skewX(45deg);
+  z-index: -1;
+  transition: width 1000ms;
+}
+
+button:hover::before {
+  width: 250%;
+}
+
+.vid-description{
+  padding-left: 55px;
+  margin: 15px 0;
+}
+
+.vid-description p{
+  font-size: 14px;
+  margin-bottom: 5px;
+  color: #3d3939;
+}
+
+.vid-description h4{
+  font-size: 14px;
+  color: #5d5959;
+  margin-top: 15px;
+}
+
+.comment{
+  display: flex;
+  align-items: flex-start;
+  margin: 20px 0;
+}
+
+.comment img{
+  width: 35px;
+  border-radius: 50%;
+  margin-right: 15px;
+}
+
+.comment h3{
+  font-size: 14px;
+  margin-bottom: 2px;
+}
+
+.comment h3 span{
+  font-size: 12px;
+  color: #474444;
+  font-weight: 500;
+  margin-left: 8px;
+}
+
+.comment-action{
+  display: flex;
+  align-items: center;
+  margin: 8px 0;
+  font-size: 14px;
+}
+
+.comment-action img {
+  width: 22px;
+  height: 22px;
+  margin-right: 8px;
+  cursor: pointer;
+  transition: transform 0.2s ease, filter 0.3s ease;
+  opacity: 0.85;
+}
+
+.comment-action img:hover {
+  transform: scale(1.2) translateY(-2px);
+  filter: brightness(1.3);
+  opacity: 1;
+}
+
+.comment-action img:active {
+  transform: scale(1.1);
+}
+
+.comment-action span{
+  margin-right: 20px;
+  color: #4c4848;
+}
+
+@media (max-width: 900px){
+  .play-video{
+    flex-basis: 100%;
+  }
+
+  .play-video iframe{
+    width: 100%;
+    height: 50vw;
+  }
+
+  .vid-description{
+    padding-left: 0;
+  }
+
+  .play-video .play-video-info span{
+    margin-left: 0;
+    margin-right: 15px;
+    margin-top: 15px;
+  }
+}
