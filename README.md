@@ -1,20 +1,42 @@
-<<<<<<< HEAD
-# gemini_lone
-=======
-# React + Vite
+🎥 Sanjoy-Tube – A Modern YouTube Frontend Clone
+Live Link: https://sanjoy-tube.vercel.app/
 
-This template provides a minimal setup to get React working in Vite with HMR and some ESLint rules.
+=> Sanjoy-Tube is a modern and lightweight frontend clone of YouTube, built using React + Vite.
+=> This project fetches real-time data using the YouTube Data API, including videos, channels, comments, recommendations, and more — giving users a smooth and dynamic YouTube-like experience.
+=> I created this project to practice real-world API integration, improve my UI/UX skills, and get hands-on experience building production-ready frontend applications.
 
-Currently, two official plugins are available:
+✨ What This Project Does:
+This is not a simple static clone — it includes real functionalities such as:
 
-- [@vitejs/plugin-react](https://github.com/vitejs/vite-plugin-react/blob/main/packages/plugin-react) uses [Babel](https://babeljs.io/) (or [oxc](https://oxc.rs) when used in [rolldown-vite](https://vite.dev/guide/rolldown)) for Fast Refresh
-- [@vitejs/plugin-react-swc](https://github.com/vitejs/vite-plugin-react/blob/main/packages/plugin-react-swc) uses [SWC](https://swc.rs/) for Fast Refresh
+▶️ Playing videos with an embedded YouTube player
+📺 Showing recommended videos
+👤 Displaying channel details & subscriber count
+💬 Fetching real YouTube comments
+⏳ Showing video upload time using moment.js
+📊 View count & like count formatting
+🎨 Smooth and clean YouTube-style UI
 
-## React Compiler
+This project focuses on frontend + API integration, and the design closely matches YouTube’s modern interface.
 
-The React Compiler is not enabled on this template because of its impact on dev & build performances. To add it, see [this documentation](https://react.dev/learn/react-compiler/installation).
+🔧 Tech Stack
+⚛️ React:
+Built fully on components
+Dynamic rendering using state & props
+Clean folder structure
 
-## Expanding the ESLint configuration
+⚡ Vite
+Super-fast development server
+Ultra-light builds
+Perfect for modern React apps
 
-If you are developing a production application, we recommend using TypeScript with type-aware lint rules enabled. Check out the [TS template](https://github.com/vitejs/vite/tree/main/packages/create-vite/template-react-ts) for information on how to integrate TypeScript and [`typescript-eslint`](https://typescript-eslint.io) in your project.
->>>>>>> a1a6b78 (Project completed: Sanjoy-Tube)
+🎨 CSS
+Custom styling inspired by YouTube
+Responsive and clean UI
+
+🔌 YouTube Data API v3
+Fetch video details
+Fetch recommendations
+Fetch real comments
+Fetch channel info
+
+
